@@ -8,7 +8,7 @@ function App() {
   const [modoOscuro, setModoOscuro] = useState(false);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/triada')
+    axios.get('/api/triada')
       .then(response => {
         setDatosTriada(response.data);
       })
